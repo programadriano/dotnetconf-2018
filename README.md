@@ -1,3 +1,5 @@
+# Projeto criado para o .NET Conf 2018
+
 # Angular SEO
 O projeto foi atualizado com o Angular Universal para rodar com server-side rendering
 

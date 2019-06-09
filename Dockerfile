@@ -2,7 +2,7 @@ FROM mhart/alpine-node as buildContainer
 RUN apk add --update git && \
  rm -rf /tmp/ /var/cache/apk/
 WORKDIR /app
-COPY ./package.json ./package-lock.json /app/
+COPY ./package.json /app/
 RUN npm install
 COPY . /app
 RUN npm set progress=false && npm config set depth 0 && npm cache clean --force
